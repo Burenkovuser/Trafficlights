@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,36 +15,51 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trafficlights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftL-Bi-OOf">
-                                <rect key="frame" x="100" y="30" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftL-Bi-OOf">
+                                <rect key="frame" x="100" y="54" width="214" height="210"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyk-ai-9nG">
-                                <rect key="frame" x="100" y="286" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyk-ai-9nG">
+                                <rect key="frame" x="100" y="490" width="214" height="210"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0613287042" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-5T-Sqn">
-                                <rect key="frame" x="123" y="477" width="79" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-5T-Sqn">
+                                <rect key="frame" x="123" y="771" width="173" height="42"/>
                                 <color key="backgroundColor" red="0.1022264317" green="0.49042196020000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9C-nG-8e3">
-                                <rect key="frame" x="100" y="158" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9C-nG-8e3">
+                                <rect key="frame" x="100" y="272" width="214" height="210"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lyk-ai-9nG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="54M-p0-uqt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qfv-5T-Sqn" secondAttribute="bottom" constant="49" id="5J0-PA-lAa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lyk-ai-9nG" secondAttribute="trailing" constant="100" id="5jT-eK-lQ2"/>
+                            <constraint firstItem="w9C-nG-8e3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="8Yd-H6-gyL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ftL-Bi-OOf" secondAttribute="trailing" constant="100" id="A6H-Er-G7L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qfv-5T-Sqn" secondAttribute="trailing" constant="118" id="DTH-yo-wI8"/>
+                            <constraint firstItem="w9C-nG-8e3" firstAttribute="width" secondItem="ftL-Bi-OOf" secondAttribute="width" id="GTv-bj-Cfp"/>
+                            <constraint firstItem="Qfv-5T-Sqn" firstAttribute="top" secondItem="lyk-ai-9nG" secondAttribute="bottom" constant="71" id="L2v-MU-ytK"/>
+                            <constraint firstItem="lyk-ai-9nG" firstAttribute="width" secondItem="ftL-Bi-OOf" secondAttribute="width" id="M7Y-3i-coh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w9C-nG-8e3" secondAttribute="trailing" constant="100" id="UcN-og-1fP"/>
+                            <constraint firstItem="lyk-ai-9nG" firstAttribute="height" secondItem="ftL-Bi-OOf" secondAttribute="height" id="Uk5-h8-lLX"/>
+                            <constraint firstItem="ftL-Bi-OOf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="XPC-DB-acb"/>
+                            <constraint firstItem="w9C-nG-8e3" firstAttribute="top" secondItem="ftL-Bi-OOf" secondAttribute="bottom" constant="8" id="gHL-yv-jdp"/>
+                            <constraint firstItem="w9C-nG-8e3" firstAttribute="height" secondItem="ftL-Bi-OOf" secondAttribute="height" id="hcz-3l-mLe"/>
+                            <constraint firstItem="Qfv-5T-Sqn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="jnu-th-13f"/>
+                            <constraint firstItem="ftL-Bi-OOf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pvg-RG-Tpf"/>
+                            <constraint firstItem="lyk-ai-9nG" firstAttribute="top" secondItem="w9C-nG-8e3" secondAttribute="bottom" constant="8" symbolic="YES" id="yYE-VY-QGS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
